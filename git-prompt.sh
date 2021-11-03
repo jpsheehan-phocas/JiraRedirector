@@ -31,7 +31,7 @@ else
 			PS1="$PS1"'`__git_ps1`'   # bash function
 			
 			PS1="$PS1"'\[\033[35m\]'  # change to purple
-			PS1="$PS1"' ''`__git_ps1 | sed '"'"'$s/^.*[^a-zA-Z]\([A-Za-z]\{2,4\}-[0-9]\{1,6\}\).*$/jira:\1/'"'"'`'
+			PS1="$PS1"' ''`__git_ps1 | egrep '"'"'[a-zA-Z]{2,4}-[0-9]{1,6}'"'"' | sed '"'"'$s/^.*[^a-zA-Z]\([A-Za-z]\{2,4\}-[0-9]\{1,6\}\).*$/jira:\1/'"'"'`'
 		fi
 	fi
 	PS1="$PS1"'\[\033[0m\]'        # change color
