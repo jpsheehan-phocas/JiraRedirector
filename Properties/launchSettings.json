@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "JiraRedirector": {
+      "commandName": "Project"
+    }
+  }
+}

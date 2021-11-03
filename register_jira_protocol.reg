@@ -1,0 +1,12 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\jira]
+"URL Protocol"=""
+@="URL:Jira Protocol"
+
+[HKEY_CLASSES_ROOT\jira\shell]
+
+[HKEY_CLASSES_ROOT\jira\shell\open]
+
+[HKEY_CLASSES_ROOT\jira\shell\open\command]
+@="C:\\tools\\JiraRedirector\\JiraRedirector.exe %1"
